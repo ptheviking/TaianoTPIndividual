@@ -6,37 +6,6 @@
     padding: 0px;
 }
 
-header {
-    background-color: #6d7037;
-    width: 1200px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 310px;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #d0d0ab;     
-}
-
-aside {
-    width: 310px;
-    height: 800px;
-    background-color: #6d7037;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#foto-ppal {
-    padding: 20px;
-}
-
 @font-face {
     font-family: "neuton-sc";
     src: url("fonts/Neuton-SC-Extralight.ttf") format("truetype");
@@ -67,93 +36,114 @@ aside {
     font-style: normal;
 }
 
+main {
+    background-color: #b9bb8c;
+    width: 1583px;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #d0d0ab;
+    background-color: #6d7037;
+    width: 1583px; 
+    height: 70px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.columna-intro {
+    width: 310px;
+    background-color: #6d7037;
+    text-align: center;
+    font-family: "neuton-sc", "alegreya-sc", serif;
+    font-size: 30px;
+    display: block;
+    line-height: 50px;
+}
+
 a {
     text-decoration: none;
-    font-family: "neuton-sc", "alegreya-sc", serif;
     color: #d0d0ab;
-    font-size: 30px;
 }
 
-a:hover {
-    color: #839b51;
-    font-weight: bolder;
+aside {
+    width: 310px;
+    background-color: #6d7037;
 }
 
-main {
+section span {
+    font-family: "caladea-bold", "alegreya-sc", serif;
+    text-transform: uppercase;
+}
+
+section {
+    width: 963px;
+    height: 450;
     display: flex;
-    height: 800px;
-    width: 1200px;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-li {
-    list-style-type: none;
-    margin-top: 20px;
-    text-align: center;
-}
-
-article {
-    width: 890px;
-    height: 280px;
-    background-color: #b9bb8c;
-    padding: 25px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.info {
+    width: 963px;
+    height: 400px;
     font-family: "caladea", "alegreya-sc", serif;
     font-size: 20px;
     color: #232514;
+    column-count: 3;
+    list-style-position: inside;
+    display: block;
+    padding: 60px;
+    box-sizing: border-box;
     line-height: 30px;
     text-align: center;
 }
 
-article span {
-    font-family: "caladea-bold", "caladea", "alegreya-sc", serif;
-    text-transform: uppercase;
+ul {
+    list-style-type: none;
 }
 
 .obras {
-    width: 890px;
-    height: 520px;
-    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    background-color: #b9bb8c;
-    position: absolute;
-    top: 350px;
-    left: 310px;
-}
-
-img {
-    margin: 10px;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 h2 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 30px;
-    color: #6d7037;
+    font-style: normal;
     text-align: center;
-    background-color: #b9bb8c;
-    width: 890px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;   
+    color: #505228;
 }
 
-section {
-    width: 300px;
+aside {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    text-align: center;
+    color: #d0d0ab;
+    line-height: 70px;
 }
 
 footer {
-    width: 1200px;
+    background-color: #6d7037;
     font-family: "caladea", serif;
     font-size: 16px;
-    background-color: #6d7037;
     color: #d0d0ab;
+    padding: 10px 0px 10px 10px;
+    width: 1583px;
+    height: 35px;
     box-sizing: border-box;
-    padding: 15px;
 }
