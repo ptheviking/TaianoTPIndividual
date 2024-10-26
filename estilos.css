@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "barriecito";
+    src: url(fonts/Barriecito-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "vollkorn";
+    src: url(fonts/Vollkorn-VariableFont_wght.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    background-color: #41604A;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    background-color: #EDF2E7; 
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    color: #41604A;
+    font-size: 30px;
+}
+
+a {
+    color: #41604A;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0, 0.25);
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.columna-intro {
+    background-color: #c3c9bc;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    line-height: 50px;
+    width: 40%;
+}
+
+.columna-intro a {
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "barriecito", sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 40px 0px 20px 0px;
+}
+
+section span {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: italic;
+    color: #EDF2E7;
+}
+
+.pagina-ppal {
+    width: 100%;
+    color: #EDF2E7;
+}
+
+section {
+    height: 450;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    height: 400px;
+    font-family: "vollkorn", serif;
+    font-size: 18px;
+    color: #EDF2E7;
+    box-sizing: border-box;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
+    gap: 6em;
+}
+
+.solapa:hover {
+    filter: drop-shadow(-5px 0px 0px #1f2f24)
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    background-color: #EDF2E7;
+    font-family: "vollkorn", serif;
+    font-size: 16px;
+    color: #41604A;
+    height: 136px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 30px;
+}
+
+.datos-extra {
+    display: flex;
+    flex-direction: column;
+}
+
+/*portfolio*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    padding: 40px 0px 40px 0px;
+    gap: 40px;
+    overflow: scroll;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.grid-container::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .grid-container::-webkit-scrollbar-thumb {
+    background: #41604A;
+    border-radius: 4px;
+  }
+  
+  .grid-container::-webkit-scrollbar-thumb:active {
+    background-color: #41604A;
+  }
+  
+  .grid-container::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+  }
+  
+  .grid-container::-webkit-scrollbar-track {
+    background: #41604A;
+    border-radius: 4px;
+  }
+  
+  .grid-container::-webkit-scrollbar-track:hover, 
+  .container::-webkit-scrollbar-track:active {
+    background: #41604A;
+  }
+
+.overlay {
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.75);
+    overflow: hidden;
+    color: white;
+    transition: .5s ease;
+    height: 0;
+    bottom: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid-item:hover .overlay {
+    height: 656px;
+    width: 448px;
+}
+
+.grid-item {
+    height: 656px;
+    width: 448px;
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    font-style: normal;
+}
+
+.grid-item p {
+    font-family: "vollkorn", serif;
+    font-size: 25px;
+    text-align: center;
+    margin-block-start: 10px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+/*fin portfolio*/
+
+/*formulario*/
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario {
+    background-image: url(img/taiano_tp1_fondoformulario.jpg);
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #1f2f24c2;
+    height: fit-content;
+    width: auto;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #EDF2E7;
+    padding: 20px 30px;
+    margin: 40px;
+    box-sizing: border-box;
+}
+
+form p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    text-align: start;
+    padding-top: 20px;
+}
+
+input {
+    width: 95%;
+    background-color: #c3c9bc;
+    border: 0px;
+    padding: 10px 10px;
+}
+
+input[type=submit] {
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+    width: min-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: "kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+textarea {
+    width: 95%;
+    background-color: #c3c9bc;
+    border: 0px;
+    padding: 10px 10px;
+    font-family: "vollkorn", serif;
+}
+
+.infoextra {
+    width: 60%;
+    background-color: #c3c9bc;
+    font-family: "vollkorn", serif;
+    font-size: 20px;
+    color: #1f2f24;
+    padding: 50px 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
