@@ -3,4 +3,4 @@ Tenía una idea de cómo quería que se viera y tenía un boceto aproximado hech
 
 Tamaño de pantalla: 1600 x 900
 Editor de código: Visual Studio (previsualización hecha con el inspector de Google Chrome)
-Figma: 
+Figma: https://www.figma.com/proto/vcWBU1jcUmvRHr4wa2TDUD/Web-TP-Individual?node-id=15-501&node-type=canvas&t=efPDnosRpzXHSVyC-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=15%3A501&hide-ui=1
