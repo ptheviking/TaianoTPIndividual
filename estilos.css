@@ -22,7 +22,6 @@
 
 main {
     background-color: #41604A;
-    height: 900px;
     display: flex;
     flex-direction: row;
 }
@@ -63,11 +62,9 @@ header a:hover {
     background-color: #c3c9bc;
     text-align: center;
     font-size: 30px;
-    display: block;
-    line-height: 50px;
     width: 40%;
+    height: 770px;
 }
-
 .columna-intro a {
     font-family: "Kalnia", serif;
     font-optical-sizing: auto;
@@ -75,49 +72,81 @@ header a:hover {
     font-style: normal;
 }
 
-h2 {
-    font-family: "barriecito", sans-serif;
-    text-align: center;
-    font-size: 2.5em;
-    padding: 40px 0px 20px 0px;
+.datitos {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-section span {
+.datitos p {
+    display: flex;
+    flex-direction: column;
+    color: #41604A;
+    font-family: "vollkorn", serif;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #c3c9bc;
+    border: 0px;
+    padding: 5px 40px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.datitos span {
     font-family: "Averia Serif Libre", serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     font-style: italic;
     color: #EDF2E7;
 }
 
-.pagina-ppal {
-    width: 100%;
+.cita {
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
     color: #EDF2E7;
+    padding: 25px 0px;
 }
 
-section {
-    height: 450;
-    display: flex;
-    flex-direction: column;
+h2 {
+    font-family: "barriecito", sans-serif;
+    font-size: 2em;
+    padding: 40px 0px 20px 0px;
+}
+
+li {
+    padding-bottom: 20px;
 }
 
 .info {
-    height: 400px;
     font-family: "vollkorn", serif;
     font-size: 18px;
-    color: #EDF2E7;
-    box-sizing: border-box;
+    color: #1f2f24;
+    background-color: #c3c9bcc4;
     line-height: 40px;
     text-align: center;
     display: flex;
-    line-height: 40px;
-    text-align: center;
-    justify-content: center;
-    gap: 6em;
+    flex-direction: column;
+    padding-left: 50px;
 }
 
-.solapa:hover {
-    filter: drop-shadow(-5px 0px 0px #1f2f24)
+.info span {
+    color: #1f2f24;
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    text-align: left;
 }
 
 ul {
@@ -129,7 +158,7 @@ footer {
     font-family: "vollkorn", serif;
     font-size: 16px;
     color: #41604A;
-    height: 136px;
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -148,38 +177,13 @@ footer {
     grid-template-columns: repeat(3, 450px);
     padding: 40px 0px 40px 0px;
     gap: 40px;
-    overflow: scroll;
-    width: 100%;
     justify-content: center;
     justify-items: center;
 }
 
-.grid-container::-webkit-scrollbar {
-    width: 0px;
-  }
-  
-  .grid-container::-webkit-scrollbar-thumb {
-    background: #41604A;
-    border-radius: 4px;
-  }
-  
-  .grid-container::-webkit-scrollbar-thumb:active {
-    background-color: #41604A;
-  }
-  
-  .grid-container::-webkit-scrollbar-thumb:hover {
-    background: #b3b3b3;
-  }
-  
-  .grid-container::-webkit-scrollbar-track {
-    background: #41604A;
-    border-radius: 4px;
-  }
-  
-  .grid-container::-webkit-scrollbar-track:hover, 
-  .container::-webkit-scrollbar-track:active {
-    background: #41604A;
-  }
+.galeria {
+    width: 100%;
+}
 
 .overlay {
     position: relative;
@@ -210,6 +214,7 @@ h3 {
     font-weight: 400;
     font-size: 35px;
     font-style: normal;
+    padding-bottom: 10px;
 }
 
 .grid-item p {
@@ -219,6 +224,28 @@ h3 {
     margin-block-start: 10px;
     margin-inline-start: 20px;
     margin-inline-end: 20px;
+}
+
+.galeriavariable {
+    background-color: #c3c9bc;
+    color: #1f2f24;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeriadiv {
+    display: none;
+    width: 100%;
+}
+
+.galeriavariable:hover .galeriadiv {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
 }
 
 /*fin portfolio*/
@@ -311,4 +338,109 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+/*fin de formulario*/
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        font-size: 1.7em;
+        gap: 10px;
+    }
+
+    header a {
+        font-size: 1em;
+    }
+
+    main {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cita {
+        font-size: 1.5em;
+    }
+
+    #foto-ppal {
+        display: flex;
+        align-self: center;
+    }
+
+    .columna-intro {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .datitos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pagina-ppal {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0em;
+        padding-bottom: 2em;
+    }
+
+    .info .items {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .info {
+        width: 100%;
+        text-align: left;
+    }
+
+    .deco {
+        display: none;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeriavariable {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 0px;
+    }
+
+    form {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .infoextra {
+        width: auto;
+        padding: 2em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2em;
+        height: fit-content;
+    }
 }
